@@ -1,0 +1,174 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+  padding: 20px;
+}
+
+.signup-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.signup-box:hover {
+  transform: translateY(-5px);
+}
+
+.signup-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.signup-box h2 {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+}
+
+.input-field:focus {
+  border-color: #000;
+  background-color: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-field::placeholder {
+  color: #a0aec0;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 1rem;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.signup-button:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signup-button:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  color: #e53e3e;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #fff5f5;
+  border: 1px solid #fed7d7;
+  font-size: 0.9rem;
+}
+
+.login-link {
+  margin-top: 2rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.login-link a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Password strength indicator */
+.password-strength {
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  background: #edf2f7;
+  overflow: hidden;
+}
+
+.password-strength-bar {
+  height: 100%;
+  width: 0;
+  transition: all 0.3s ease;
+}
+
+.strength-weak {
+  width: 33.33%;
+  background: #f56565;
+}
+
+.strength-medium {
+  width: 66.66%;
+  background: #ecc94b;
+}
+
+.strength-strong {
+  width: 100%;
+  background: #48bb78;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .signup-box {
+    padding: 2rem;
+  }
+
+  .signup-box h1 {
+    font-size: 2rem;
+  }
+
+  .signup-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .input-field {
+    padding: 0.6rem 0.8rem;
+  }
+} 

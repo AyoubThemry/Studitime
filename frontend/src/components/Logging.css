@@ -1,0 +1,296 @@
+.logging {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logging h1 {
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.logging-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.real-time-logging,
+.manual-logging {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer-display {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.elapsed-time {
+  color: #000;
+}
+
+.timer-ready {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.record-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #000;
+  color: white;
+}
+
+.record-button.recording {
+  background: #dc3545;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.duration-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  .logging {
+    padding: 1rem;
+  }
+
+  .timer-display {
+    font-size: 2rem;
+  }
+
+  .timer-ready {
+    font-size: 1.2rem;
+  }
+}
+
+.logging-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logging-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000;
+  font-size: 2rem;
+}
+
+.logging-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #000;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
+}
+
+.grade-description {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.grade-0 {
+  background-color: #C6F6D5;
+  color: #22543D;
+}
+
+.grade-1 {
+  background-color: #9AE6B4;
+  color: #22543D;
+}
+
+.grade-2 {
+  background-color: #FAF089;
+  color: #744210;
+}
+
+.grade-3 {
+  background-color: #FBD38D;
+  color: #7B341E;
+}
+
+.grade-4 {
+  background-color: #FEB2B2;
+  color: #742A2A;
+}
+
+.grade-5 {
+  background-color: #FC8181;
+  color: #742A2A;
+}
+
+.timer-display {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  color: #2d3748;
+  font-family: monospace;
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.start-button,
+.stop-button,
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-button {
+  background: #48bb78;
+  color: white;
+}
+
+.stop-button {
+  background: #f56565;
+  color: white;
+}
+
+.submit-button {
+  background: #000;
+  color: white;
+}
+
+.start-button:hover,
+.stop-button:hover,
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:active,
+.stop-button:active,
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submit-button:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+} 
